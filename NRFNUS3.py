@@ -413,4 +413,4 @@ def mcode(ite):
     testfile.close()
 
 if __name__ == '__main__':
-    Parallel(n_jobs=4)(delayed(mcode)(ite=i) for i in range(10))
+    Parallel(n_jobs=3)(delayed(mcode)(ite=i) for i in range(10))
